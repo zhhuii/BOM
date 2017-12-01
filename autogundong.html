@@ -756,24 +756,22 @@
     </div>
 </html>
 <script>
-
-    var num = 1;
-    var t = setInterval(function () {
-        num++
-        window.scrollBy(0,20);
-    },1000)
-    let flag = true;
-    let box = document.querySelector('.box');
-    box.onclick = function () {
-        if(flag){
-            clearInterval(t);
-            flag = false;
-        }else{
-            t = setInterval(function () {
-                num++
-                window.scrollBy(0,20);
-            },1000);
-            flag = true;
+    window.onload = function(){
+        var t = setInterval(function () {
+            window.scrollBy(0,20);
+        },1000)
+        let flag = true;
+        let box = document.querySelector('.box');
+        box.onclick = function () {
+            if(flag){
+                clearInterval(t);
+                flag = false;
+            }else{
+                t = setInterval(function () {
+                    window.scrollBy(0,20);
+                },1000);
+                flag = true;
+            }
         }
     }
 </script>

@@ -31,15 +31,17 @@
 </body>
 </html>
 <script>
-    let top1 = document.querySelector('.top');
-    window.onscroll = function(){
+    window.onload = function(){
+        let top1 = document.querySelector('.top');
+        window.onscroll = function(){
         if(document.documentElement.scrollTop > 1000){
             top1.style.display = 'block';
         }else{
             top1.style.display = 'none';
         }
-    };
-    top.onclick = function () {
-        window.scroll(0,0);
+        };
+        top.onclick = function () {
+            window.scroll(0,0);
+        }
     }
 </script>
