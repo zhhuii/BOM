@@ -1,0 +1,26 @@
+/*
+* @Author: lenovo
+* @Date:   2017-08-17 16:01:24
+* @Last Modified by:   949691148
+* @Last Modified time: 2017-12-01 14:54:53
+*/
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-family: : "微软雅黑","宋体",sans-serif;
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	-webkit-tap-highlight-color: transparent;
+}
+body{
+	background: #ffffff;
+}
+input{
+	outline: none;
+	border: 0;
+}
